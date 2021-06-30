@@ -13,7 +13,7 @@ function animatePrice(){
         easing: "linear",
         step: function(val) {
             $(".con-3_block-1_content_1_text-2-1").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-            $('.con-3_subscale-1').css('width', '75%');
+            $('.con-3_subscale-1').css('width', '75%').addClass('con-3_subscaleActive');
         }
     });
     $({numberValue: 0}).animate({numberValue: 90}, {
@@ -21,7 +21,7 @@ function animatePrice(){
         easing: "linear",
         step: function(val) {
             $(".con-3_block-1_content_1_text-2-2").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-            $('.con-3_subscale-2').css('width', '90%');
+            $('.con-3_subscale-2').css('width', '90%').addClass('con-3_subscaleActive');
         }
     });
     $({numberValue: 0}).animate({numberValue: 65}, {
@@ -29,7 +29,7 @@ function animatePrice(){
         easing: "linear",
         step: function(val) {
             $(".con-3_block-1_content_1_text-2-3").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-            $('.con-3_subscale-3').css('width', '65%');
+            $('.con-3_subscale-3').css('width', '65%').addClass('con-3_subscaleActive');
         }
     });
     isAnimatePriceInitialized = true;

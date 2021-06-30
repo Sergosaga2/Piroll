@@ -363,8 +363,12 @@ header {
 .con-3_subscale {
 	height: 4px;
 	width: 0;
-	background: #10C9C3;
+	background: #004f3f;
 	transition: 1.5s;
+}
+
+.con-3_subscaleActive {
+	background: #10C9C3;
 }
 
 .con-3_block-2 {
